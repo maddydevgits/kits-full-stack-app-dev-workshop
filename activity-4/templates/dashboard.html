@@ -1,0 +1,52 @@
+<!-- 1. To display the registered data in a table format through flask -->
+<!-- 2. This page should open when the login is valid -->
+<!-- 3. This page should not open directly -->
+<!-- 100 registrations, 10 registrations, 20 registrations -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+          <title>Login Page</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Demo</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="/">Register</a></li>
+                <li class="active"><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logoutPage">Logout</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div class="container">
+          <h2>Dashboard</h2> <br/>
+          <div class="table-responsive-sm">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Password</th>
+                </tr>
+                {%for i in result %}
+                    <tr>
+                        <td>{{i[0]}}</td>
+                        <td>{{i[1]}}</td>
+                        <td>{{i[2]}}</td>
+                    </tr>
+                {%endfor%}
+            </table>
+          </div>
+            
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        </body>
+        </html>
