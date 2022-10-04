@@ -38,6 +38,26 @@ Full Stack Web App Development for Department of CSE, KITS Guntur
         <td>Create a Login and Register Pages</td>
         <td>Create handlers to handle login and register logic</td>
     </tr>
+    <tr>
+        <td>5. </td>
+        <td>Create API to read Data from Database </td>
+        <td>From MySQL Database, we have to fetch records using GET Method</td>
+    </tr>
+    <tr>
+        <td>6. </td>
+        <td>Create API to read Data from API and store in DB </td>
+        <td>From API, you have to read Data and store in DB using GET</td>
+    </tr>
+    <tr>
+        <td>7. </td>
+        <td>Create API to fetch records by using NodeJs from MySQL </td>
+        <td>From API, you have to read Data using Node</td>
+    </tr>
+    <tr>
+        <td>8. </td>
+        <td>Create API to inserts records by using NodeJs to MySQL </td>
+        <td>From API, you have to insert Data using Node</td>
+    </tr>
 </table>
 
 # Questions

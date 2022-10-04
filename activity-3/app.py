@@ -3,9 +3,9 @@ import mysql.connector as mysql
 
 db=mysql.connect(
     host='localhost',
-    user='',
-    password='',
-    database=''
+    user='root',
+    password='2022Root',
+    database='maddy'
 )
 
 cur=db.cursor()
@@ -36,7 +36,7 @@ def collectData():
 
 @app.route('/getdata',methods=['GET','POST'])
 def getDataFromDB():
-    cur.execute("SELECT * FROM table")
+    cur.execute("SELECT * FROM fullstack")
     result=cur.fetchall()
     data=[]
     for i in result:

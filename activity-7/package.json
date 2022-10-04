@@ -1,0 +1,15 @@
+{
+  "name": "activity-7",
+  "version": "1.0.0",
+  "description": "'creating api to read data from db'",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "express": "4.18.1",
+    "mysql2": "2.3.3"
+  },
+  "author": "maddy",
+  "license": "ISC"
+}
